@@ -1,0 +1,2 @@
+dog=org.apache.extension.impl.DogService
+cat=org.apache.extension.impl.CatService

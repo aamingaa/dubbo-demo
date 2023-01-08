@@ -1,0 +1,3 @@
+dubbo=org.apache.extension.impl.DubboAdaptiveExt
+cloud=org.apache.extension.impl.SpringCloudAdaptiveExt
+thrift=org.apache.extension.impl.ThriftAdaptiveExt
