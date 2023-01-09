@@ -7,6 +7,7 @@ import org.junit.Test;
 
 /**
  * https://segmentfault.com/a/1190000020384210
+ * @Adaptive标注的类 > URL参数 > @SPI注解中的值
  */
 public class ExtensionTest {
     /**
