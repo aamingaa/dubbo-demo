@@ -54,6 +54,14 @@
             <scope>import</scope>
         </dependency>
 
+        <!-- lombok依赖包 -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.10</version>
+<!--            <scope>provided</scope>-->
+        </dependency>
+
         <dependency>
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-dependencies-zookeeper</artifactId>
