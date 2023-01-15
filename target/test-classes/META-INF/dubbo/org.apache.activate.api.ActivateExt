@@ -1,0 +1,5 @@
+group=org.apache.activate.impl.GroupActivateExtImpl
+key=org.apache.activate.impl.ValueActivateExtImpl
+order1=org.apache.activate.impl.OrderActivateExtImpl1
+order2=org.apache.activate.impl.OrderActivateExtImpl2
+org.apache.activate.impl.ActivateExtImpl1
