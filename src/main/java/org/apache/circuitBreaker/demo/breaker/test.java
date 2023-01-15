@@ -1,7 +1,6 @@
-package org.apache.circuitBreaker;
+package org.apache.circuitBreaker.demo.breaker;
 
-import org.apache.circuitBreaker.breaker.SimpleCircuitBreaker;
-import org.apache.circuitBreaker.service.Service;
+import org.apache.circuitBreaker.demo.breaker.service.Service;
 
 public class test {
     public static void main(String[] args) throws Exception {

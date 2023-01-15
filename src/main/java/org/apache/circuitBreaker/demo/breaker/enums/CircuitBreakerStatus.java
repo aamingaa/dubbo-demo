@@ -1,4 +1,4 @@
-package org.apache.circuitBreaker.enums;
+package org.apache.circuitBreaker.demo.breaker.enums;
 
 // 断路器状态
 public enum CircuitBreakerStatus {

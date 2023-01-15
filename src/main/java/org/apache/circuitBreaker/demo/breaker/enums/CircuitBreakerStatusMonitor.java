@@ -1,4 +1,4 @@
-package org.apache.circuitBreaker.enums;
+package org.apache.circuitBreaker.demo.breaker.enums;
 
 // 添加一个Monitor用于记录状态变更
 public enum CircuitBreakerStatusMonitor {

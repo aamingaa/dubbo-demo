@@ -1,7 +1,7 @@
-package org.apache.circuitBreaker.breaker;
+package org.apache.circuitBreaker.demo.breaker;
 
 import lombok.Getter;
-import org.apache.circuitBreaker.enums.CircuitBreakerStatus;
+import org.apache.circuitBreaker.demo.breaker.enums.CircuitBreakerStatus;
 
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.atomic.LongAdder;

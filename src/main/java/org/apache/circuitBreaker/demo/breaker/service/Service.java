@@ -1,4 +1,4 @@
-package org.apache.circuitBreaker.service;
+package org.apache.circuitBreaker.demo.breaker.service;
 
 public  class Service {
 
