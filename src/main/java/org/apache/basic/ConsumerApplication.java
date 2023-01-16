@@ -15,6 +15,7 @@ public class ConsumerApplication {
     private static void runWithBootstrap() {
         ReferenceConfig<DemoService> reference = new ReferenceConfig<>();
         reference.setInterface(DemoService.class);
+        reference.setRetries(1);
 //        reference.setGeneric("true");
 //        reference.setProtocol("");
 
@@ -22,9 +23,12 @@ public class ConsumerApplication {
         ApplicationConfig applicationConfig = new ApplicationConfig("dubbo-demo-api-consumer");
         applicationConfig.setQosEnable(false);
         applicationConfig.setQosPort(-1);
+
+        RegistryConfig registryConfig = new RegistryConfig("zookeeper://127.0.0.1:2181");
+        registryConfig.setCluster("failover");
         bootstrap.application(applicationConfig)
                 .registry(new RegistryConfig("zookeeper://127.0.0.1:2181"))
-                .protocol(new ProtocolConfig(CommonConstants.DUBBO, -1))
+                .protocol(new ProtocolConfig(CommonConstants.DUBBO, 20800))
                 .reference(reference)
                 .start();
 
