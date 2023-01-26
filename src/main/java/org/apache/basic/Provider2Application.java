@@ -9,6 +9,10 @@ import org.apache.dubbo.config.ProtocolConfig;
 import org.apache.dubbo.config.RegistryConfig;
 import org.apache.dubbo.config.ServiceConfig;
 import org.apache.dubbo.config.bootstrap.DubboBootstrap;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import java.util.concurrent.CountDownLatch;
 
 public class Provider2Application {
     public static void main(String[] args) throws Exception {
@@ -24,7 +28,7 @@ public class Provider2Application {
         String appName = "dubbo-demo-api-provider-2";
         bootstrap.application(new ApplicationConfig(appName))
                 .registry(new RegistryConfig("zookeeper://127.0.0.1:2181"))
-                .protocol(new ProtocolConfig(CommonConstants.DUBBO, 20802))
+                .protocol(new ProtocolConfig(CommonConstants.DUBBO, 20803))
                 .service(service)
                 .start()
                 .await();
