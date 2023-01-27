@@ -6,7 +6,15 @@
 
     <groupId>org.example</groupId>
     <artifactId>dubbo-aaming-demos</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>dubbo-demo-basic</module>
+        <module>dubbo-demo-basic/dubbo-demo-basic-consumer</module>
+        <module>dubbo-demo-basic/dubbo-demo-basic-provider</module>
+        <module>dubbo-demo-basic/dubbo-demo-basic-interface</module>
+        <module>dubbo-demo-other</module>
+    </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -28,7 +36,6 @@
         <hystrix-starter.version>1.4.7.RELEASE</hystrix-starter.version>
         <spring-boot.version>1.5.21.RELEASE</spring-boot.version>
     </properties>
-    WARNING
     <dependencies>
         <dependency>
             <groupId>org.apache.dubbo</groupId>

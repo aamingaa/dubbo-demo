@@ -7,8 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="dubbo-demo-other" />
+        <module name="dubbo-demo-basic-provider" />
+        <module name="dubbo-demo-basic-interface" />
         <module name="dubbo-aaming-demos" />
-        <module name="dubbo-demo" />
+        <module name="dubbo-demo-basic-consumer" />
+        <module name="dubbo-demo-basic" />
       </profile>
     </annotationProcessing>
   </component>
