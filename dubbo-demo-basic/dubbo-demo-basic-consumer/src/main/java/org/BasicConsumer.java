@@ -32,7 +32,5 @@ public class BasicConsumer {
         String hello = demoService.sayHello("world");
         System.out.println(hello);
 
-//        System.out.println("start void test...");
-//        demoService.testVoid();
     }
 }
